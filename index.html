@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="shapka">
+            <div class="rezume">Резюме</div>
+            <div class="fio">
+                ФИО:
+                <input type="text" placeholder="Введите ваше ФИО"></div>
+            <div class="pol">
+                Пол:
+                <select id="gender" name="gender">
+                    <option value="male">Мужской</option>
+                    <option value="female">Женский</option>
+                </select>
+            </div>
+        </div>
+        <div class="osnov">
+            <div class="left">
+                    <div class="label">Образование</div>
+                    <div class="education" contenteditable="true" placeholder="Введите ваше образование"></div>
+                    <div class="label">Опыт</div>
+                    <div class="opit" contenteditable="true" placeholder="Введите ваш опыт работы"></div>
+                    <div class="label">Навыки</div>
+                    <div class="skills" contenteditable="true" placeholder="Введите ваши навыки"></div>
+            </div>
+            <div class="picture"><img src="man.png" alt=""></div>
+            <div class="right">
+                    <div class="label">Хобби</div>
+                    <div class="hobby" contenteditable="true" placeholder="Введите ваше хобби"></div>
+                    <div class="label">Языки</div>
+                    <div class="languages" contenteditable="true" placeholder="Введите языки, которыми владеете"></div>
+                    <div class="contacts">
+                        Контакты:
+                        <span>☎ <input type="text" id="phone" placeholder="Введите ваш номер телефона"></span>
+                        <span>✉ <input type="text" id="pochta" placeholder="Введите вашу почту"></span>
+                        <span>➤ <input type="text" id="address" placeholder="Введите ваш домашний адрес"></span>
+                    </div>
+            </div>
+        </div>
+        <div class="niz">
+            <div class="save" id="saveMessage" onclick="saveData()">Сохранить</div>
+            <div class="delete" id="delete" onclick="clearData()">Очистить данные</div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
