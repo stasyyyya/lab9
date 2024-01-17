@@ -100,21 +100,22 @@
     transition: all 0.3s;
     height: 50%;
     width: 10%;
+    margin-right: 10px;
 }
 
-.save,
-.delete {
-    position: relative;
-    display: inline-block;
-    background: linear-gradient(90deg,#f39f9f, #e9cb9d, #b0f4b0, #a4ddf0, rgb(165, 165, 240), #dd93f5, #f39cbf, #ed9e9e);
-    background-size: 500%;
-    border-radius: 5pt;
-    cursor: pointer;
-    overflow: hidden;
-    transition: all 0.3s;
-    height: 50%;
-    width: 10%;
-    margin-right: 10px;
+.save::before,
+.delete::before {
+    content: '';
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    width: 110%;
+    height: 110%;
+    background: linear-gradient(90deg, #f39f9f, #e9cb9d, #b0f4b0, #a4ddf0, rgb(165, 165, 240), #dd93f5, #f39cbf, #ed9e9e);
+    background-size: 1400% 1400%;
+    background-position: 100% 0;
+    z-index: -1;
+    animation: animate 2s linear infinite;
 }
 
 @keyframes animate {
